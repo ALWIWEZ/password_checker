@@ -24,6 +24,7 @@ body{
 
 
 .password-checker{
+    min-width: 400px;
     width: 50vw;
     background-color: var(--primary);
     padding: 2rem;
@@ -86,4 +87,5 @@ h5{
     background-color: unset;
     border-radius: inherit;
     transition: .4s ease-in-out;
+
 }
