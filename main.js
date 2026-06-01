@@ -19,11 +19,19 @@ function checkPasswordStrenght(password){
     progress_bar.style.cssText = `width : ${(strenght/5)*100}%`;
      
     if(strenght == 1) {
-        progress_bar.style.cssText += `background-color:red;`;  indicator.textContent = "Password strength: very weak";
+        progress_bar.style.cssText += `background-color:red;`;  indicator.textContent = "Password strength: Very weak";
     };
-    if(strenght == 2) progress_bar.style.cssText += `background-color:orange;`;
-    if(strenght == 3) progress_bar.style.cssText += `background-color:yellow;`;
-    if(strenght == 4) progress_bar.style.cssText += `background-color:deepskyblue;`;
-    if(strenght == 5) progress_bar.style.cssText += `background-color:lime;`;
+    if(strenght == 2) {
+        progress_bar.style.cssText += `background-color:orange;`;  indicator.textContent = "Password strength: Weak";
+    };
+    if(strenght == 3){
+        progress_bar.style.cssText += `background-color:yellow;`;  indicator.textContent = "Password strength: Normal";
+    };
+    if(strenght == 4){
+        progress_bar.style.cssText += `background-color:deepskyblue;`;  indicator.textContent = "Password strength: Strong";
+    };
+    if(strenght == 5){
+        progress_bar.style.cssText += `background-color:lime;`;  indicator.textContent = "Password strength: Very strong";
+    };
     console.log(strenght);
 }
