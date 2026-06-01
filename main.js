@@ -18,7 +18,7 @@ function checkPasswordStrenght(password){
 
     progress_bar.style.cssText = `width : ${(strenght/5)*100}%`;
      
-    if(strenght == 1) {progress_bar.style.cssText += `background-color:red;`;  indicator.text = "very weak"}
+    if(strenght == 1) {progress_bar.style.cssText += `background-color:red;`;  indicator.text = "very weak";}
     if(strenght == 2) progress_bar.style.cssText += `background-color:orange;`;
     if(strenght == 3) progress_bar.style.cssText += `background-color:yellow;`;
     if(strenght == 4) progress_bar.style.cssText += `background-color:deepskyblue;`;
